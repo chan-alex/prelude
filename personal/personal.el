@@ -1,5 +1,6 @@
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
-(add-to-list 'slime-contribs 'slime-fancy)
+(setq slime-contribs '(slime-repl slime-fancy)) ; repl only
+;(add-to-list 'slime-contribs 'slime-fancy)
 
 (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
 (add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))
